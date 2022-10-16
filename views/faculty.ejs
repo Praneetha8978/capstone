@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HOME PAGE</title>
+    <style>
+        .b{
+            width: 200px;
+            height:65px;
+            padding-top: 10;
+            font-size: larger;
+            border-radius: 50px;
+            background-color: aliceblue;
+            color: black;
+            margin-top: 170px;
+        }
+        .b:hover{
+            background: rgb(249, 219, 219);
+        }
+        h1{
+            font-size: 60px;
+            margin-top: 20px;
+        }
+        .a{
+            margin-left: 1407px;
+            font-size: 30px;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: black;
+            text-decoration: none
+        }
+    </style>
+</head>
+<body>
+    <a href="/logout" class="a">LOGOUT</a>
+    <center><h1>welcome &nbsp;<%=names%></h1></center>
+    <center>
+        <form method="get" action="/check"><a href="check"><input type="button" value="CHECK THE STATUS" class="b"></a></form>
+    </center>
+</body>
+</html>

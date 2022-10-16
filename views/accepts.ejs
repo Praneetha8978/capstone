@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body{
+                background-color: rgb(200, 212, 212);
+            }
+            .t{
+                margin-top: 225px;
+                width:200px;
+                height:20px
+            }
+            .l{
+                font-size: 35px;
+            }
+            ul{
+                list-style-type: none;
+            }
+            td{
+                width:100px;
+                font-size: 50px;
+            }
+            .a{
+                margin-left: 1415px;
+                font-size: 20px;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                color: black;
+                text-decoration: none
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/logout" class="a">LOGOUT</a>
+        <center>
+            <h1>THE STUDENTS WHICH ALL ARE ACCEPTED CAN SEE STATUS HERE</h1>
+            <h2>REGISTRATION NUMBERS:</h2>
+            <table class="t">
+                <% responseArray.forEach(function(ele){ %>
+                    <tr>
+                        <td><center><%=ele.regno%></center></td>
+                    </tr>
+                <%  }); %> 
+            </table>
+        </center>
+    </body>
+</html>
